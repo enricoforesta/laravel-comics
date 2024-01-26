@@ -12,7 +12,10 @@
 </head>
 
 <body>
-    <h1>ciao</h1>
+    @include('shared.header')
+    @yield('main')
+    @include('shared.footer')
+
 </body>
 
 </html>
