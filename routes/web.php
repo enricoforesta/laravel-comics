@@ -14,10 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $data = [
-        "items" => config('list-itemdb')
+    $dataHeader = [
+        "itemsHeader" => config('list-itemdb')
     ];
-    return view('homepage', $data);
+    $dataFooter = [
+        "itemsFooter" => config('list-itemdb')
+    ];
+
+    return view('homepage', $dataHeader, $dataFooter);
 });
 Route::get('/single', function () {
     $data = [

@@ -6,7 +6,7 @@
         </div>
         <div class="list">
             <ul>
-                @foreach ($items as $item)
+                @foreach ($itemsHeader as $item)
                     <li>
                         <a href="">{{ $item['title'] }}</a>
                     </li>
