@@ -1,0 +1,9 @@
+@use'./variable.scss' as *;
+
+body {
+    background-color: #303030 !important;
+}
+
+header {
+    background-color: $color-text-white;
+}

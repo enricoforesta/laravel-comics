@@ -1,1 +1,5 @@
+@use'./partials/typography.scss' as *;
+@use'./partials/variable.scss' as *;
+@use'./partials/common.scss' as *;
+@use'./partials/header.scss' as *;
 @import "~bootstrap/scss/bootstrap";

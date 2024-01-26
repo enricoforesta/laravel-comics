@@ -1,0 +1,45 @@
+@use'variable.scss' as *;
+
+.navbar-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 200px;
+    padding-top: 15px;
+    font-size: 12px;
+
+    .logo {
+        width: 80px;
+        margin-right: 15px;
+        padding-bottom: 15px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .list {
+        display: flex;
+    }
+
+    ul {
+        display: flex;
+        gap: 15px;
+    }
+
+    li {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        a:hover {
+            color: $color-bar;
+
+        }
+
+        &:hover,
+        &:active {
+            border-bottom: 2px solid $color-bar ;
+        }
+
+    }
+}
